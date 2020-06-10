@@ -1,3 +1,5 @@
+# all code here is temporary
+
 base_title = "Michał Mytych"
 mail = "m****************m"
 github_link = "https://github.com/michalmytych"
