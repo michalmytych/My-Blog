@@ -74,3 +74,11 @@ article a{
 article a:hover{
     color: rgb(219, 219, 7);
 }
+
+a{
+    transition: 0.7s;
+}
+
+nav, main, article, a, img{
+    border-radius: 12px;
+}
