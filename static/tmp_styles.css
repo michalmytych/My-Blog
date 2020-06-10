@@ -48,3 +48,22 @@ main{
     background-color: rgb(185, 214, 238);
     width: 70%;
 }
+
+article{
+    background-color: #3472A4;
+    padding: 1.5rem;
+}
+
+article small{
+    display: block;
+    width: 100%;
+}
+
+article a{
+    font-size: 1.7rem;
+    color: yellow;
+}
+
+article a:hover{
+    color: rgb(219, 219, 7);
+}

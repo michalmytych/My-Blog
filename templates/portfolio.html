@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+    <h1>Moje portfolio</h1>
+    <p>Oto moje portfolio jako programisty:</p>
+
+    {% for project in projects %}
+    <article>
+        <small>{{ project.date_posted }}</small>
+
+        <a href="/home">{{ project.title }}</a>
+
+        <p >{{ project.content }}</p>
+
+        <img src={{ project.img_url}}>
+    </article>
+
+{% endfor %}
+
+</main>
+{% endblock content %}

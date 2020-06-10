@@ -9,6 +9,7 @@
     <!-- TEMPORARY FONT & STYLES-->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='tmp_styles.css') }}">
     <link rel="stylesheet" href="https://use.typekit.net/pkw8wgs.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
 
     {% if title and base_title %}
@@ -18,26 +19,15 @@
     {% endif %}
 </head>
 <body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <a href="/">HOME</a>
+      <a href="/blog">BLOG</a>
+      <a href="/portfolio">PORTFOLIO</a>
+      <a href="/contact">CONTACT</a>
+    </nav>
 
-  <!-- NAVIGATION BAR -->
-  <nav>
-    <a href="/">HOME</a>
-    <a href="/blog">BLOG</a>
-    <a href="/portfolio">PORTFOLIO</a>
-    <a href="/contact">CONTACT</a>
-  </nav>
+    {% block content %}{% endblock %}
 
-
-  <!-- MAIN CONTENT -->
-  <main>
-    <h1>Witaj na mojej stronie!</h1>
-    <p>Nazywam się Michał, i jestem studentem Uniwersytetu Jagiellońskiego pasjonującym się programowaniem i nie tylko. Jeśli
-      chcesz zobaczyć moje portfolio, znajdziesz je <a href="/portfolio">tutaj</a>. Jeśli chcesz dowiedzieć się
-      czegoś ciekawego na temat programowania, lub innych dziedzin o których piszę, odwiedź mój <a href="/blog">blog</a>.
-    </p>
-
-  </main>
-
-
-    </body>
+</body>
 </html>
