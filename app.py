@@ -12,7 +12,10 @@ def home():
 
 @app.route("/blog")
 def blog():
-    return render_template('blog.html', title='My Programming Blog')
+    return render_template(
+        'blog.html', 
+        title='My Programming Blog',
+        posts=posts)
 
 
 @app.route("/portfolio")

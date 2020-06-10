@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+<main>
+    <h1>Mój blog programistyczny</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Accusantium ipsum nobis aperiam ut incidunt magni quisquam 
+        quas quidem voluptatum harum repellendus impedit, nostrum 
+        voluptate esse deserunt saepe, earum voluptatem. Atque!</p>
+
+    {% for post in posts %}
+
+    <article>
+        <small>{{ post.author }}</small>
+
+        <small>{{ post.date_posted }}</small>
+
+        <a href="/home">{{ post.title }}</a>
+
+        <p >{{ post.content }}</p>
+
+        <img src={{ post.img_url}}>
+    </article>
+
+{% endfor %}
+
+</main>
+{% endblock content %}
