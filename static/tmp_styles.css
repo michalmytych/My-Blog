@@ -1,0 +1,50 @@
+body{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 1rem;
+}
+
+nav{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(185, 214, 238);
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a{
+    background-color: #3472A4;
+    color: yellow;
+    padding: 0.5rem 2rem 0.5rem 2rem ;
+}
+
+nav a:hover{
+    background-color: yellow;
+    color: #3472A4;
+}
+
+h1{
+    color: rgb(39, 104, 156);
+}
+
+main a{
+    color: #3472A4;
+}
+
+main a:hover{
+    color: yellow;
+}
+
+main{
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 0.5rem 2rem 3rem 2rem;
+    background-color: rgb(185, 214, 238);
+    width: 70%;
+}

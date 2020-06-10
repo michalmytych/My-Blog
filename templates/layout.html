@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <!-- TEMPORARY FONT & STYLES-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='tmp_styles.css') }}">
+    <link rel="stylesheet" href="https://use.typekit.net/pkw8wgs.css">
+
+
+    {% if title and base_title %}
+        <title>{{ base_title }} - {{ title }}</title>
+    {% else %}
+        <title>Michał Mytych</title>
+    {% endif %}
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a href="/">HOME</a>
+    <a href="/blog">BLOG</a>
+    <a href="/portfolio">PORTFOLIO</a>
+    <a href="/contact">CONTACT</a>
+  </nav>
+
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <h1>Witaj na mojej stronie!</h1>
+    <p>Nazywam się Michał, i jestem studentem Uniwersytetu Jagiellońskiego pasjonującym się programowaniem i nie tylko. Jeśli
+      chcesz zobaczyć moje portfolio, znajdziesz je <a href="/portfolio">tutaj</a>. Jeśli chcesz dowiedzieć się
+      czegoś ciekawego na temat programowania, lub innych dziedzin o których piszę, odwiedź mój <a href="/blog">blog</a>.
+    </p>
+
+  </main>
+
+
+    </body>
+</html>
