@@ -52,6 +52,13 @@ main{
 article{
     background-color: #3472A4;
     padding: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1.4rem;
+}
+
+img{
+    margin: 0 auto;
 }
 
 article small{
