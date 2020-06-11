@@ -1,9 +1,14 @@
 from flask import Flask, render_template, url_for
+from flask_sqlalchemy import SQLAlchemy
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 from config import *
 
+
 app = Flask(__name__)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
+db = SQLAlchemy(app)
 
 app.config['FLASK_ADMIN_SWATCH'] = 'slate'
 

@@ -1,4 +1,4 @@
-# all code here is temporary
+# This temporary model for development period
 
 base_title = "Michał Mytych"
 mail = "m****************m"
