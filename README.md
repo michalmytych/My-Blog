@@ -1,4 +1,4 @@
-# My-Portfolio-and-Blog
+# My Blog
 A simple blog that I create using Python and Flask. Work in progress.
 
 
