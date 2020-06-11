@@ -1,5 +1,5 @@
 # My-Portfolio-and-Blog
-A simple blog &amp; portfolio that I create using Python and Flask. Work in progress.
+A simple blog that I create using Python and Flask. Work in progress.
 
 
 ## Future plans:

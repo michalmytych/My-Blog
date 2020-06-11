@@ -18,14 +18,6 @@ def blog():
         posts=posts)
 
 
-@app.route("/portfolio")
-def portfolio():
-    return render_template(
-        'portfolio.html', 
-        title='My Portfolio', 
-        projects=projects)
-
-
 @app.route("/contact")
 def contact():
     return render_template(
