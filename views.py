@@ -1,11 +1,21 @@
-from flask_appbuilder import ModelView
-from flask_appbuilder.models.sqla.interface import SQLAInterface
+from flask.views import MethodView
+import app
 
 
-class GroupModelView(ModelView):
-    datamodel = SQLAInterface(Post)
-    related_views = [PostModelView]
 
+class PostsAPI(MethodView):
 
-class PostModelView(ModelView):
-    datamodel = SQLAInterface(Post)
+    def GET(self):
+        return "To jest post!"
+
+    def POST(self):
+        return 0
+
+    def PUT(self):
+        return 0
+
+    def DELETE(self):
+        return 0
+    
+
+app.add_url_rule('/posts', view_func=PostsAPI.as_view('post'))
