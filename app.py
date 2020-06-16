@@ -7,7 +7,7 @@ from config import *
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'slqite:////C/Users/micha/source/repos/MyBlogAndPortfolio/My-Portfolio-and-Blog/my_blog_data.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////mnt/c/users/micha/source/repos/MyBlogAndPortfolio\My-Portfolio-and-Blog/my_blog_data.db'
 
 db = SQLAlchemy(app)
 
