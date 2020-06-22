@@ -18,4 +18,7 @@ admin = Admin(app, name='my_blog', template_mode='bootstrap3')
 
 
 app.config.from_object(__name__)
+
+
 from app import views
+from app import admin_views

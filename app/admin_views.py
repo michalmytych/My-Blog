@@ -7,5 +7,5 @@ def admin_dashboard():
 
 
 @app.route("/admin/posts")
-def admin_dashboard():
+def admin_posts():
     return "here will be admin's posts section"
