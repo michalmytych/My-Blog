@@ -1,7 +1,6 @@
-/env
-/share
-/bin
-/include
-/lib64
-.git
+env/
+share/
+bin/
+include/
+lib64/
 *.cfg
