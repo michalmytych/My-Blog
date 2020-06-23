@@ -9,23 +9,23 @@ github_link = "https://github.com/michalmytych"
 
 posts = [
     {
-        'title': 'Tytuł postu 1',
+        'title': 'Tytuł posta 1',
         'author': 'Michał Mytych',
-        'content': 'Tresc postu nr 1',
-        'img_url': 'static/tmp_img.jpg',
+        'content': 'Tresc posta nr 1',
+        'img_url': 'static/img/tmp_img.jpg',
         'date_posted': 'Miesiac 20, 2020'
     },
     {
-        'title': 'Tytuł postu 2',
+        #'title': ***just check if it works***,
         'author': 'Michał Mytych',
-        'content': 'Tresc postu nr 2',
-        'img_url': 'static/tmp_img.jpg',
+        'content': 'Tresc posta nr 2',
+        'img_url': 'static/img/tmp_img.jpg',
         'date_posted': 'Miesiac 20, 2020'
     },    {
-        'title': 'Tytuł postu 2',
+        'title': 'Tytuł posta 2',
         'author': 'Michał Mytych',
-        'content': 'Tresc postu nr 2',
-        'img_url': 'static/tmp_img.jpg',
+        'content': 'Tresc posta nr 2',
+        #'img_url': ***just check if it works***,
         'date_posted': 'Miesiac 20, 2020'
     }
 ]

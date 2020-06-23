@@ -10,15 +10,34 @@
     {% for post in posts %}
 
     <article>
-        <small>{{ post.author }}</small>
+        <small>
+            {% if variable is not none %}
+                {{ post.author }}
+            {% endif %}
+        </small>
 
-        <small>{{ post.date_posted }}</small>
+        <small>
+            {% if variable is not none %}
+                {{ post.date_posted }}
+            {% endif %}
+        </small>
 
-        <a href="/home">{{ post.title }}</a>
+        <a href="/home">
+            {% if variable is not none %}
+                {{ post.title }}
+            {% endif %}
+        </a>
 
-        <p >{{ post.content }}</p>
+        <p >
+            {% if variable is not none %}
+                {{ post.content }}
+            {% endif %}
+        </p>
+        
+        {% if post.img_url is not none %}
+            <img src={{ post.img_url }}>
+        {% endif %}
 
-        <img src={{ post.img_url}}>
     </article>
 
     {% endfor %}
