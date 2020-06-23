@@ -11,7 +11,7 @@
 
     <h2>Możesz też zostawić mi wiadomość:</h2>
 
-    <form>
+    <form action="/contact" method="POST">
       <label for="name">Imię: </label>
       <input name="name" type="text">
       <label for="surname">Nazwisko: </label>
@@ -19,7 +19,10 @@
       <label for="email">e-mail: </label>
       <input name="message" type="email">
       <label for="email">Wiadomość: </label>
-      <input class="big-text-box" name="message" type="text">
+      <textarea class="big-text-box" name="message" type="text">
+        Napisz wiadomość...
+      </textarea>
+      
       <button class="send-message-btn" type="submit">Wyślij</button>
 
     </form>
