@@ -1,5 +1,5 @@
 from app import app, db
-from flask import render_template, url_for
+from flask import render_template, url_for, request, redirect
 
 
 # * * * * * * * * * * * * * * * * * * 
@@ -22,8 +22,25 @@ def blog():
         posts=posts)
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
+    if request.method == "POST":
+        contact_request = request.form
+
+        # maybe add some id and client side datetime
+        name = contact_request["name"]
+        surname = contact_request["surname"]
+
+        # maybe make email required
+        email = contact_request["email"]
+        message = contact_request["message"]
+        
+        
+        print(contact_request)
+
+        return redirect(request.url)
+
+
     return render_template(
         'contact.html', 
         title='Contact',
