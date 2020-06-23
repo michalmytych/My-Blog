@@ -1,6 +1,5 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flask_admin import Admin
 import os
 
 
@@ -14,7 +13,6 @@ db = SQLAlchemy(app)
 
 
 app.config['FLASK_ADMIN_SWATCH'] = 'slate'
-admin = Admin(app, name='my_blog', template_mode='bootstrap3')
 
 
 app.config.from_object(__name__)
