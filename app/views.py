@@ -1,10 +1,10 @@
+#!/usr/local/bin/python
+# -*- coding: utf-8 -*-
+
 from app import app, db
 from flask import render_template, url_for, request, redirect
-
-
-# * * * * * * * * * * * * * * * * * * 
 from app.config import posts, base_title, mail, github_link
-# * * * * * * * * * * * * * * * * * * 
+
 
 
 

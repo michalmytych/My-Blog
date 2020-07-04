@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: latin-1 -*-
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import os
