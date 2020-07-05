@@ -1,31 +1,29 @@
-#!/usr/local/bin/python
 # -*- coding: utf-8 -*-
 
-base_title = "Michal Mytych"
-mail = "m****************m"
-github_link = "https://github.com/michalmytych"
+base_title = u"Michal Mytych"
+mail = u"m****************m"
+github_link = u"https://github.com/michalmytych"
 
 
 posts = [
     {
-        'title': 'Tytul posta 1',
-        'author': 'Michal Mytych',
-        'content': 'Tresc posta nr 1',
-        'img_url': 'static/img/tmp_img.jpg',
-        'date_posted': 'Miesiac 20, 2020'
+        'title': u'Tytul posta 1',
+        'author': u'Michal Mytych',
+        'content': u'Tresc posta nr 1',
+        'img_url': u'static/img/tmp_img.jpg',
+        'date_posted': u'Miesiac 20, 2020'
     },
     {
         #'title': ***just check if it works***,
-        'author': 'Michal Mytych',
-        'content': 'Tresc posta nr 2',
-        'img_url': 'static/img/tmp_img.jpg',
-        'date_posted': 'Miesiac 20, 2020'
+        'author': u'Michal Mytych',
+        'content': u'Tresc posta nr 2',
+        'img_url': u'static/img/tmp_img.jpg',
+        'date_posted': u'Miesiac 20, 2020'
     },    {
-        'title': 'Tytułlposta 2',
-        'author': 'Michal Mytych',
-        'content': 'Tresc posta nr 2',
+        'title': u'Tytułlposta 2',
+        'author': u'Michal Mytych',
+        'content': u'Tresc posta nr 2',
         #'img_url': ***just check if it works***,
-        'date_posted': 'Miesiac 20, 2020'
+        'date_posted': u'Miesiac 20, 2020'
     }
 ]
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
