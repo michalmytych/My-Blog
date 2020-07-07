@@ -131,3 +131,10 @@ dmypy.json
 
 # venv
 *.cfg
+
+MyBlog/
+\MyBlog
+MyBlog\
+/.vscode
+\.vscode
+.vscode
