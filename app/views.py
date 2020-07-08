@@ -33,9 +33,6 @@ def contact():
         # maybe make email required
         email = contact_request["email"]
         message = contact_request["message"]
-        
-        
-        print(contact_request)
 
         return redirect(request.url)
 
