@@ -44,5 +44,9 @@ def contact():
         mail=mail)
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+@app.route("/post/<int:post_id>")
+def post(requested_post_id):         # url post parameter post_id
+    return render_template("templates/post.html",
+                            # get post from posts dict by value of posted_id key - maybe lambda function
+                            post=posts[post_id],
+                            title=post.title)

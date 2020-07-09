@@ -11,6 +11,7 @@ class RegistrationForm(Form):
     # message ...
     # date_send ...
 
+"""
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -27,3 +28,5 @@ class ContactForm(db.Model):
     email = db.Column(db.String(50), nullable=False)
     message = db.Column(db.String(200), nullable=False)
     date_send = db.Column(db.DateTime)
+
+"""
