@@ -1,9 +1,40 @@
-{% extends "templates/layout.html%}
+{% extends "layout.html" %}
 <!-- {% block title %}Post{% endblock %} -->
 {% block content %}
 
 <main>
-    <h1>Tytuł konkretnego posta</h1>
+    <a href="/home">
+        Powrót
+    </a>
+
+    <h1>
+        {% if variable is not none %}
+        {{ post.title }}
+        {% endif %}
+    </h1>
+
+    <small>
+        {% if variable is not none %}
+            {{ post.author }}
+        {% endif %}
+    </small>
+
+    <small>
+        {% if variable is not none %}
+            {{ post.date_posted }}
+        {% endif %}
+    </small>
+
+    <p >
+        {% if variable is not none %}
+            {{ post.content }}
+        {% endif %}
+    </p>
+    
+    {% if post.img_url is not none %}
+        <img src={{ url_for('static', filename= "img/" + post.img_url) }}>
+    {% endif %}
+
 </main>
 
 {% endblock content %}

@@ -45,9 +45,8 @@ def contact():
 
 
 @app.route("/post/<int:requested_post_id>")
-def post(requested_post_id):         # url post parameter post_id
-    return render_template("templates/post.html",
-                            # git push to remote later
-                            post=posts.get(requested_post_id, default = 1)
-                            #post=posts[requested_post_id],
-                            title=post.title)
+def post(requested_post_id):
+    post = posts[requested_post_id]
+    print(post)
+    return render_template("post.html",
+                            post=post)

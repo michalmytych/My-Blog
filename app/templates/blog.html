@@ -35,7 +35,7 @@
         </p>
         
         {% if post.img_url is not none %}
-            <img src={{ post.img_url }}>
+            <img src={{ url_for('static', filename= 'img/' + post.img_url) }}>
         {% endif %}
 
     </article>
