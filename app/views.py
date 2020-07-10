@@ -44,9 +44,10 @@ def contact():
         mail=mail)
 
 
-@app.route("/post/<int:post_id>")
+@app.route("/post/<int:requested_post_id>")
 def post(requested_post_id):         # url post parameter post_id
     return render_template("templates/post.html",
-                            # get post from posts dict by value of posted_id key - maybe lambda function
-                            post=posts[post_id],
+                            # git push to remote later
+                            post=posts.get(requested_post_id, default = 1)
+                            #post=posts[requested_post_id],
                             title=post.title)
