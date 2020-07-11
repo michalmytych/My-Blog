@@ -56,3 +56,14 @@ def post(requested_post_id):
                             post=post)
     else:
         return "Error 404: Brak zasobu. Nie ma takiego posta!"
+
+
+@app.route("/json", methods=["POST"])
+def json():
+    if request.is_json:
+
+        data = request.get_json()
+
+        return "Json recieved!", 200
+    else:
+        return "No json in request!"
