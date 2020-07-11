@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+  <main>
+    <h1>{{ error_code }} {{ header }}</h1>
+    <p>
+        {{ message }}
+        <a href="/home">Powrót</a>.
+    </p>
+
+  </main>
+{% endblock content %}

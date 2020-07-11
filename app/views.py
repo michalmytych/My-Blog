@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from app import app, db
-from flask import render_template, url_for, request, redirect
+from flask import render_template, url_for, request, redirect, abort
 from app.config import posts, base_title, mail, github_link
-
-
 
 
 @app.route("/")
@@ -47,23 +45,13 @@ def contact():
 @app.route("/post/<int:requested_post_id>")
 def post(requested_post_id):
     
+    if (requested_post_id > len(posts)):
+        abort(404)
+        return
+
     ### later change this:
-
-    if requested_post_id < len(posts):
-        post = posts[requested_post_id]
-        print(len(posts))
-        return render_template("post.html",
+    post = posts[requested_post_id]
+    return render_template("post.html",
                             post=post)
-    else:
-        return "Error 404: Brak zasobu. Nie ma takiego posta!"
 
-
-@app.route("/json", methods=["POST"])
-def json():
-    if request.is_json:
-
-        data = request.get_json()
-
-        return "Json recieved!", 200
-    else:
-        return "No json in request!"
+    
