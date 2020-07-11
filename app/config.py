@@ -21,7 +21,7 @@ posts = [
         'date_posted': u'Miesiac 20, 2020'
     },    
     {
-        'title': u'Tytułlposta 2',
+        'title': u'Tytuł posta 2',
         'author': u'Michal Mytych',
         'content': u'Tresc posta nr 2',
         'img_url': u'tmp_img.jpg',

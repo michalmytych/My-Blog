@@ -46,7 +46,13 @@ def contact():
 
 @app.route("/post/<int:requested_post_id>")
 def post(requested_post_id):
-    post = posts[requested_post_id]
-    print(post)
-    return render_template("post.html",
+    
+    ### later change this:
+
+    if requested_post_id < len(posts):
+        post = posts[requested_post_id]
+        print(len(posts))
+        return render_template("post.html",
                             post=post)
+    else:
+        return "Error 404: Brak zasobu. Nie ma takiego posta!"
