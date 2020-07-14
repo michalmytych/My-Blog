@@ -1,14 +1,23 @@
 # -*- coding: utf-8 -*-
-
+from flask import render_template
 from app import app
+
+
+@app.route("/admin")
+def admin():
+    title = "Index of Admin"
+    return render_template("admin/index.html", title=title)
 
 
 @app.route("/admin/dashboard")
 def admin_dashboard():
-    return u"here will be admin's dashboard"
+    title = "Dashboard"
+    return render_template("admin/index.html", title=title)
+
 
 
 @app.route("/admin/posts")
 def admin_posts():
-    return u"here will be admin's posts section"
+    title = "Posts"
+    return render_template("admin/index.html", title=title)
 

@@ -1,5 +1,21 @@
-{% extends 'admin/master.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% if title and base_title %}
+        <title>My Blog Admin - {{ title }}</title>
+    {% else %}
+        <title>Admin</title>
+    {% endif %}
+</head>
+<body>
+    <nav>
+      <!-- *** TEMPORARY LAYOUT *** -->
+      <a href="/admin">INDEX OF ADMIN</a><br>
+      <a href="/admin/dashboard">DASHBOARD</a><br>
+      <a href="/admin/posts">POSTS</a><br>
+    </nav>
 
-{% block body %}
-  <p>Hello world</p>
-{% endblock %}
+    {% block content %}{% endblock %}
+
+</body>
+</html>

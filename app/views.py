@@ -41,17 +41,13 @@ def contact():
         github_link=github_link,
         mail=mail)
 
-
+### ZMIANY DO ZACOMMITOWANIA: ###
 @app.route("/post/<int:requested_post_id>")
 def post(requested_post_id):
-    
-    if (requested_post_id > len(posts)):
-        abort(404)
-        return
-
-    ### later change this:
-    post = posts[requested_post_id]
-    return render_template("post.html",
-                            post=post)
+    # temporary way:
+    for post in posts:
+        if post['id'] == requested_post_id:
+            found = post
+            return render_template("post.html", post=found)
 
     
