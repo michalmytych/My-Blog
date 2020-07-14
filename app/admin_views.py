@@ -15,7 +15,6 @@ def admin_dashboard():
     return render_template("admin/index.html", title=title)
 
 
-
 @app.route("/admin/posts")
 def admin_posts():
     title = "Posts"

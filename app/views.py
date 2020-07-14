@@ -32,7 +32,14 @@ def contact():
         email = contact_request["email"]
         message = contact_request["message"]
 
-        return redirect(request.url)
+        # Here data from contact form will be 
+        # prepared to be send as an email to admin
+
+        return render_template(
+            'message_sent.html', 
+            title='Contact',
+            github_link=github_link,
+            mail=mail)
 
 
     return render_template(
@@ -41,7 +48,7 @@ def contact():
         github_link=github_link,
         mail=mail)
 
-### ZMIANY DO ZACOMMITOWANIA: ###
+
 @app.route("/post/<int:requested_post_id>")
 def post(requested_post_id):
     # temporary way:
