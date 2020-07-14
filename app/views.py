@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from app import app, db
+from app import app, db, mail
 from flask import render_template, url_for, request, redirect, abort
 from app.config import posts, base_title, mail, github_link
+from flask_mail import Message
 
 
 @app.route("/")
@@ -34,6 +35,13 @@ def contact():
 
         # Here data from contact form will be 
         # prepared to be send as an email to admin
+
+        # later set MAIL_DEFAULT_SENDER through flask app config ap 
+        contact_form_mail = Message("Hello",
+              recipients=["to@example.com"])
+
+        # mail.send(contact_form_mail)
+        # https://pythonhosted.org/Flask-Mail/
 
         return render_template(
             'message_sent.html', 

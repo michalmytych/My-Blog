@@ -2,6 +2,7 @@
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_mail import Mail
 import os
 
 
@@ -12,6 +13,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '************'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'
 db = SQLAlchemy(app)
+mail = Mail(app)
 
 
 app.config['FLASK_ADMIN_SWATCH'] = 'slate'
