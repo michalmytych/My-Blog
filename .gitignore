@@ -138,3 +138,6 @@ MyBlog\
 /.vscode
 \.vscode
 .vscode
+
+mydatabase.db
+*.db
