@@ -8,7 +8,10 @@
     <!-- TEMPORARY FONTS & STYLES-->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/tmp_styles.css') }}">
     <link rel="stylesheet" href="https://use.typekit.net/pkw8wgs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    <script type="text/javascript" src="static/js/script.js"></script>
 
 
     {% if title and base_title %}
@@ -20,13 +23,19 @@
 <body>
     <!-- NAVIGATION BAR -->
     <nav>
-      <a href="/">HOME</a>
-      <a href="/blog">BLOG</a>
-      <a href="/contact">CONTACT</a>
+      <a href="/">Home</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Kontakt</a>
     </nav>
+
+    <video autoplay="autoplay" muted="true" loop="loop" id="video_bg" poster="{{ url_for('static', filename='img/poster.png') }}">
+        <source src="{{ url_for('static', filename='video/bg_video.mp4') }}"" type="video/mp4">
+    </video>
+
+    <!-- poster="bg_poster.jpg" src="{{ url_for('static', filename='video/bg_video.mp4') }}"  -->
 
     {% block content %}
     {% endblock %}
-
 </body>
 </html>
+

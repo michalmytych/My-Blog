@@ -10,24 +10,24 @@ posts = [
         'id' : 0,
         'title': u'Tytul posta 1',
         'author': u'Michal Mytych',
-        'content': u'Tresc posta nr 1',
-        'img_url': u'tmp_img.jpg',
+        'content': u'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laudantium quas! Placeat optio eaque officia, deserunt veniam repellat tempora nulla explicabo at! Consequuntur doloremque quae rem veritatis aut corrupti a.',
+        'img_url': u'1.jpg',
         'date_posted': u'Miesiac 20, 2020'
     },
     {
         'id' : 1,
-        #'title': ***just check if it works***,
+        'title': u'Tytul posta 2',
         'author': u'Michal Mytych',
-        'content': u'Tresc posta nr 2',
-        'img_url': u'tmp_img.jpg',
+        'content': u'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laudantium quas! Placeat optio eaque officia, deserunt veniam repellat tempora nulla explicabo at! Consequuntur doloremque quae rem veritatis aut corrupti a.',
+        'img_url': u'2.jpg',
         'date_posted': u'Miesiac 20, 2020'
     },    
     {
         'id' : 2,
         'title': u'Tytuł posta 2',
         'author': u'Michal Mytych',
-        'content': u'Tresc posta nr 2',
-        'img_url': u'tmp_img.jpg',
+        'content': u'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laudantium quas! Placeat optio eaque officia, deserunt veniam repellat tempora nulla explicabo at! Consequuntur doloremque quae rem veritatis aut corrupti a.',
+        'img_url': u'3.jpg',
         'date_posted': u'Miesiac 20, 2020'
     }
 ]

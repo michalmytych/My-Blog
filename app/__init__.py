@@ -13,6 +13,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '************'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 mail = Mail(app)
 
@@ -23,9 +24,9 @@ app.config['FLASK_ADMIN_SWATCH'] = 'slate'
 app.config.from_object(__name__)
 
 
-# from app import views
-# from app import admin_views
-# from app import error_handlers
+from app import views
+from app import admin_views
+from app import error_handlers
 
 
 class Post(db.Model):
@@ -39,4 +40,4 @@ class Post(db.Model):
     thumbs_down = db.Column(db.Integer, default=0, nullable=True)
 
     def __repr__(self):
-        return f"Post(id:'{self.id}', title:'{self.title}')"
+        return f"Post(id:{self.id}, title:{self.title}"

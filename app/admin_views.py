@@ -20,3 +20,9 @@ def admin_posts():
     title = "Posts"
     return render_template("admin/index.html", title=title)
 
+
+@app.route("/admin/posts/new")
+def admin_new_post():
+    title = "New post"
+    return render_template("admin/index.html", title=title)
+

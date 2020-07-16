@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- TEMPORARY FONTS & STYLES-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/tmp_styles.css') }}">
+    <link rel="stylesheet" href="https://use.typekit.net/pkw8wgs.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    
     {% if title and base_title %}
         <title>My Blog Admin - {{ title }}</title>
     {% else %}

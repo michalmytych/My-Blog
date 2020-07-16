@@ -1,55 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: acumin-pro, sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
-    padding-top: 1rem;
-    background-color: rgb(129, 165, 243);
+    padding: 0;
+}
+
+#video_bg{
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -999;
 }
 
 nav{
     margin: 0 auto;
-    width: 70%;
     display: flex;
-    justify-content: space-around;
-    background-color: rgb(185, 214, 238);
-    padding: 1rem 2rem 1rem 2rem;
+    justify-content: flex-end;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+
+/*** Colors ***/
+nav, input, .send-message-btn, .send-message-btn, main{
+    background-color: #180013ea;
+}
+
+a, h1, h2{
+    color: #f957ff;
+}
+
+p{
+    color: #fdbbfb;
+}
+
+h1, h2, h3, nav a{
+    font-family: 'Quantico', sans-serif;
 }
 
 a{
     text-decoration: none;
 }
 
-nav a{
-    background-color: #3472A4;
-    color: yellow;
-    padding: 0.5rem 2rem 0.5rem 2rem ;
+a{
+    padding: 0.3rem;
+    margin-left: 2rem;
+    margin-right: 0.5rem;
 }
 
 nav a:hover{
-    background-color: yellow;
-    color: #3472A4;
+    color: #fdbbfb;
 }
 
 h1, h2{
-    color: rgb(39, 104, 156);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 form{
-    background-color: rgb(39, 104, 156);
     padding-bottom: 1rem;
     text-align: right;
     display: flex;
     flex-direction: column;
 }
 
-input, .send-message-btn{
+input, .send-message-btn, .big-text-box{
+    background-color: #8B0087;
     width: 30%;
     margin: 0 auto;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     border-style: none;
     padding: 0.5rem;
-    background-color: rgb(185, 214, 238);
+}
+
+.big-text-box, input{
+    color: #fdbbfb;
+    opacity: 0.4;
 }
 
 .big-text-box, input, .send-message-btn{
@@ -59,6 +97,8 @@ input, .send-message-btn{
 }
 
 .big-text-box{
+    color: #fdbbfb;
+    font-size: 1rem;
     height: 5rem;
     width: 85%;
     margin-right: 1rem;
@@ -66,51 +106,46 @@ input, .send-message-btn{
     margin-bottom: 3rem;
 }
 
+.big-text-box{
+    margin: 0 auto;
+}
+
 .send-message-btn{
+    cursor: pointer;
     margin: 1rem;
     margin-top: 2rem;
     padding: 0.6rem;
     display: block;
     margin: 0 auto;
-    background-color: rgb(185, 214, 238);
-    color: rgb(22, 72, 112);
+    margin-top: 1rem;
+    color: white;
 }
 
-.send-message-btn:hover{
-    background-color: yellow;
+.send-message-btn:hover, input:hover, .big-text-box:hover{
+    background-color: #a31d9f;
 }
 
 label{
     margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     color: white;
     padding-left: 0.7rem;
 }
 
 h2{
     font-size: 1.6rem;
-    padding-top: 2rem;
-}
-
-main a{
-    color: #3472A4;
-}
-
-main a:hover{
-    color: yellow;
 }
 
 main{
     margin: 0 auto;
-    margin-top: 3rem;
-    padding: 0.5rem 2rem 3rem 2rem;
-    background-color: rgb(185, 214, 238);
+    margin-top: 1rem;
+    padding: 0 2rem 2rem 2rem;
     width: 70%;
 }
 
 article{
-    background-color: #3472A4;
-    padding: 1.5rem;
-    width: 80%;
+    padding: 0.5rem;
     margin: 0 auto;
     margin-top: 1.4rem;
 }
@@ -118,25 +153,36 @@ article{
 article small{
     display: block;
     width: 100%;
+    color: #fdbbfb;
+    font-style: italic;
+    font-size: 0.7rem;
 }
 
-article a{
+/* change this later: */
+h3, article a{
     font-size: 1.7rem;
-    color: yellow;
-}
-
-article a:hover{
-    color: rgb(219, 219, 7);
+    padding-left: 0;
+    margin-left: 0;
 }
 
 a, .send-message-btn{
     transition: 0.5s;
 }
 
-nav, main, article, a, img, form, input, .send-message-btn, .big-text-box{
-    border-radius: 12px;
+label{
+    color: #fdbbfb;
 }
 
 .done-box{
-    
+    background-color: aqua;
+}
+
+p a{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
