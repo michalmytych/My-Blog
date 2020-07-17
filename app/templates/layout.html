@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/pkw8wgs.css">
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
-
-    <script type="text/javascript" src="static/js/script.js"></script>
+    <script src="static/js/node_modules/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
 
 
     {% if title and base_title %}
@@ -20,7 +19,7 @@
         <title>Michał Mytych</title>
     {% endif %}
 </head>
-<body>
+<body id="my-scrollbar">
     <!-- NAVIGATION BAR -->
     <nav>
       <a href="/">Home</a>
@@ -32,10 +31,14 @@
         <source src="{{ url_for('static', filename='video/bg_video.mp4') }}"" type="video/mp4">
     </video>
 
-    <!-- poster="bg_poster.jpg" src="{{ url_for('static', filename='video/bg_video.mp4') }}"  -->
-
     {% block content %}
     {% endblock %}
+
+    <script>
+        // Momentum scrolling
+        var Scrollbar = window.Scrollbar;
+        Scrollbar.init(document.querySelector('#my-scrollbar'), options);
+      </script>
 </body>
 </html>
 
