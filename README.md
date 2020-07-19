@@ -1,13 +1,6 @@
 # My Blog
-A simple blog that I create using Python and Flask. Work in progress.
+A simple blog I create using Python and Flask. Work in progress.
 
-
-## Future plans:
-* admin:
-    1) adding styled and formatted headers and content texts
-    2) adding embedded code display
-    3) adding videos
-    4) adding embedded youtube videos
-
-* make adding of some blog post elements optional
-    (not every post must have embedded code display or video)
+### How it looks on the front-end:
+![demo0](https://user-images.githubusercontent.com/59512535/87804544-4f367b00-c854-11ea-91c8-12773e02bda2.png)
+![demo1](https://user-images.githubusercontent.com/59512535/87804553-5198d500-c854-11ea-9adf-e7943e1d7dc6.png)
