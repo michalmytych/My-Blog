@@ -7,6 +7,7 @@ To create database, being in My-Blog direction run commands:
 python manage.py db init
 python manage.py db migrate
 python manage.py db upgrade
+or python3 ...
 """
 
 migrate = Migrate(app, db)

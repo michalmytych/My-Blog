@@ -12,8 +12,8 @@ load_dotenv(find_dotenv())
 app = Flask(__name__)
 db = SQLAlchemy(app)
 mail = Mail(app)
-app.config.from_envvar('FLASK_CONFIG')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config.from_envvar('FLASK_CONFIG')
 
 
 from app import views
