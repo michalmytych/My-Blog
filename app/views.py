@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from app import app, db, mail
+from app import app, db, thismail
 from flask import render_template, url_for, request, redirect, abort
 from app.config import posts, base_title, mail, github_link
-from flask_mail import Message
+from flask_mail import Message, Mail
 
 
 @app.route("/")
@@ -25,29 +25,27 @@ def contact():
     if request.method == "POST":
         contact_request = request.form
 
-        # maybe add some id and client side datetime
         name = contact_request["name"]
         surname = contact_request["surname"]
-
-        # maybe make email required
         email = contact_request["email"]
         message = contact_request["message"]
 
-        # Here data from contact form will be 
-        # prepared to be send as an email to admin
 
-        # later set MAIL_DEFAULT_SENDER through flask app config ap 
+        print(name, surname, email, message)
+
+
         contact_form_mail = Message("Hello",
-              recipients=["to@example.com"])
+                sender="guitar.myt@gmail.com",
+              recipients=["guitar.myt@gmail.com"])
 
-        # mail.send(contact_form_mail)
-        # https://pythonhosted.org/Flask-Mail/
+        contact_form_mail.body = message
+
+        thismail.send(contact_form_mail)
 
         return render_template(
             'message_sent.html', 
             title='Contact',
-            github_link=github_link,
-            mail=mail)
+            github_link=github_link)
 
 
     return render_template(
