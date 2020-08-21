@@ -30,17 +30,16 @@ def contact():
         email = contact_request["email"]
         message = contact_request["message"]
 
+        try:
+            contact_form_mail = Message("Hello",
+                    sender="guitar.myt@gmail.com",
+                    recipients=[email])
 
-        print(name, surname, email, message)
+            contact_form_mail.body = message
+            thismail.send(contact_form_mail)
+        except:
+            print("Error occured when sending e-mail.")
 
-
-        contact_form_mail = Message("Hello",
-                sender="guitar.myt@gmail.com",
-              recipients=["guitar.myt@gmail.com"])
-
-        contact_form_mail.body = message
-
-        thismail.send(contact_form_mail)
 
         return render_template(
             'message_sent.html', 

@@ -14,12 +14,12 @@ db = SQLAlchemy(app)
 
 app.config.update(dict(
     DEBUG = True,
-    MAIL_SERVER = 'smtp.gmail.com',
-    MAIL_PORT = 465,
-    MAIL_USERNAME = "guitar.myt@gmail.com",
-    MAIL_PASSWORD = "*****************",
-    MAIL_USE_TLS = False,
-    MAIL_USE_SSL = True
+    MAIL_SERVER = 'smtp.mail.yahoo.com',
+    MAIL_PORT = 587,
+    MAIL_USERNAME = "mike.mytyczenko@yahoo.com",
+    MAIL_PASSWORD = "",
+    MAIL_USE_TLS = True,
+    MAIL_USE_SSL = False
 ))
 
 thismail = Mail(app)
