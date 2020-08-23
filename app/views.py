@@ -32,7 +32,7 @@ def contact():
 
         try:
             contact_form_mail = Message("Hello",
-                    sender="guitar.myt@gmail.com",
+                    sender="mike.mytyczenko@yahoo.com",
                     recipients=[email])
 
             contact_form_mail.body = message

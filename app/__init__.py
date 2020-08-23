@@ -16,7 +16,7 @@ app.config.update(dict(
     DEBUG = True,
     MAIL_SERVER = 'smtp.mail.yahoo.com',
     MAIL_PORT = 587,
-    MAIL_USERNAME = "mike.mytyczenko@yahoo.com",
+    MAIL_USERNAME = "",
     MAIL_PASSWORD = "",
     MAIL_USE_TLS = True,
     MAIL_USE_SSL = False

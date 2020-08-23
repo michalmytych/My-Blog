@@ -22,9 +22,9 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     FLASK_ADMIN_SWATCH = 'slate'
-    MAIL_SERVER = 'smtp.gmail.com'
-    MAIL_PORT = 465
-    MAIL_USERNAME = "guitar.myt@gmail.com"
+    MAIL_SERVER = 'smtp.mail.yahoo.com'
+    MAIL_PORT = 587
+    MAIL_USERNAME = "mike.mytyczenko@yahoo.com"
     MAIL_PASSWORD = ""
     MAIL_USE_TLS = False
     MAIL_USE_SSL = True
