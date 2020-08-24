@@ -1,0 +1,22 @@
+{% extends "admin.html" %}
+{% block content %}
+  <!-- MAIN CONTENT -->
+  <main>
+    <h1>Dodawanie nowego posta</h1>
+
+    <form action="/newpost" method="POST">
+      <label for="title">Tytuł posta: </label>
+      <input name="title" type="text">
+      <label for="author">Autor: </label>
+      <input name="author" type="text">
+      <label for="text_content">Treść (tekst): </label>
+      <textarea class="big-text-box" name="text_content" type="text"></textarea>
+        <h1> Tu będzie input na pliki </h1>
+      
+      <button class="send-message-btn" type="submit">Zatwierdź zmiany</button>
+
+    </form>
+
+
+  </main>
+{% endblock content %}
