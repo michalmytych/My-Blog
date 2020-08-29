@@ -56,7 +56,6 @@ def contact():
 
 @app.route("/post/<int:requested_post_id>")
 def post(requested_post_id):
-    # temporary way:
     for post in posts:
         if post['id'] == requested_post_id:
             found = post
